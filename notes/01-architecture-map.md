@@ -1,4 +1,4 @@
-﻿# 01 — Architecture map
+# 01 — Architecture map
 
 **Confidence:** observed (type inventory + selected decomp)
 

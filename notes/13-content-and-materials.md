@@ -1,4 +1,4 @@
-﻿# 13 — ContentFinder → Materials → GPU
+# 13 — ContentFinder → Materials → GPU
 
 **Confidence:** observed (`ContentFinder<T>`, `MaterialPool`, `Resources`, `ModContentPack`)
 

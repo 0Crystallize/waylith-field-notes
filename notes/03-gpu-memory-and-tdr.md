@@ -1,4 +1,4 @@
-﻿# 03 — GPU memory & TDR
+# 03 — GPU memory & TDR
 
 **Confidence:** observed (types) + **khatum** (симптомы пака)
 

@@ -1,4 +1,4 @@
-﻿# 08 — Texture load pipeline
+# 08 — Texture load pipeline
 
 **Confidence:** observed (`Texture2D` Waylith + Unity stubs, `GpuTextureService`, `TextureCacheStore`)
 

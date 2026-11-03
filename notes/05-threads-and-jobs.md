@@ -1,4 +1,4 @@
-﻿# 05 — Threads & jobs
+# 05 — Threads & jobs
 
 **Confidence:** observed (поверхностно) + **khatum**
 
@@ -14,11 +14,11 @@
 | `AssetPrefetcher` workers | I/O decode threads |
 | `FrameProfiler` / `ThreadEventQueue` | profiling |
 
-## Pack-scale field report (**khatum**)
+## Khatum (load path)
 
 - Загрузка модов идёт не на «толстом» стеке процесса; LongEvent worker historically thin (~1 MiB default thread stack)
 - PE `SizeOfStackReserve` на exe **не** спасает `new Thread(ThreadStart)` workers
-- Обход: стартовать async LongEvent на потоке с увеличенным stack (детали — у мейнтейнеров крупных паков; сюда процедуры не копируем)
+- PackFixes: fat stack для LongEvent / FatLoadTail и т.п. — см. шапку `LOCAL_FIXES`, не дублировать здесь процедуры
 
 ## Правило для будущих идей
 

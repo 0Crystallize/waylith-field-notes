@@ -1,4 +1,4 @@
-﻿# 07 — Frame loop (main ↔ render)
+# 07 — Frame loop (main ↔ render)
 
 **Confidence:** observed (`EngineApplication.RunLoop`, `RenderThread`, `FrameRenderer`)
 

@@ -1,4 +1,4 @@
-﻿# 09 — Asset packs & bake
+# 09 — Asset packs & bake
 
 **Confidence:** observed (`ContentPacks`, `ModAssetPacks`, `AssetBake*`, `ContentPack`, `DdsFile`)
 

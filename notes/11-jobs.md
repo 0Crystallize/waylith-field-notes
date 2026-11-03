@@ -1,4 +1,4 @@
-﻿# 11 — WaylithJobRuntime
+# 11 — WaylithJobRuntime
 
 **Confidence:** observed (сигнатуры + static ctor фрагменты)
 
@@ -15,10 +15,10 @@
 
 `LoadingScope` / `ProgressCounter` — обёртки прогресса load (детали — по мере надобности).
 
-## Связь с load crashes
+## Связь с Khatum
 
 Проблемы thin-stack LongEvent / Xml resolve — это **не** обязательно эти Workers; чаще vanilla `new Thread` / LongEvent.  
-Не путать `WaylithJobRuntime` workers с async LongEvent load-worker.
+Не путать `WaylithJobRuntime` workers с load-worker стеком PackFixes.
 
 ## Правило
 

@@ -1,4 +1,4 @@
-﻿# 02 — Texture residency
+# 02 — Texture residency
 
 **Confidence:** observed (декомпил `TextureResidency`, `TextureResourceManager`, `GpuTextureService`, `AssetPrefetcher`)
 

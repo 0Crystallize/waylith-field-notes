@@ -1,4 +1,4 @@
-﻿# 12 — Bootstrap (RimWorldWaylith)
+# 12 — Bootstrap (RimWorldWaylith)
 
 **Confidence:** observed (`RimWorldWaylith.Bootstrap`, `ModAssetPackBake`)
 

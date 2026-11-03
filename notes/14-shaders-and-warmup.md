@@ -1,4 +1,4 @@
-﻿# 14 — Shaders & warmup
+# 14 — Shaders & warmup
 
 **Confidence:** observed (`ShaderWarmup`, `ShaderSourceLoader`, `ShaderPrewarmer`, `AssetBundleShaders`, Bootstrap)
 

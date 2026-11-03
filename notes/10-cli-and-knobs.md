@@ -1,4 +1,4 @@
-﻿# 10 — CLI switches & knobs (расширение)
+# 10 — CLI switches & knobs (расширение)
 
 **Confidence:** observed (`RimWorldWaylith.Program`, `GraphicsDevice`, …)
 
@@ -25,8 +25,10 @@
 | `ScreenshotAfterBoot=` | path; кадр ~120 после boot complete |
 | `MemoryReportAfterBoot` | `ProcessMemoryReport.Log` на кадре ~120 |
 | `QuitAfterBoot` | shutdown на кадре ~180 |
+| `noEvictAtlasSources` | не выселять source-текстуры после static atlas bake |
+| `noCompressAtlases` | не жать static atlas pages |
 
-**khatum note:** раньше стеки глушили ранним runtime-костылём; upstream уже даёт `-NoFileLogCallstacks` — для экспериментов лучше официальный CLI.
+**khatum note:** PackFixes глушил `CaptureStackTraces` костылём; upstream уже даёт `-NoFileLogCallstacks`. Имеет смысл предпочитать CLI/официальный путь, когда проверяем без PackFixes.
 
 Также (из wiki/primer, не из этого декомпила): `-mod=id1,id2` — проверить в Bootstrap/`GenCommandLine` отдельно при необходимости.
 

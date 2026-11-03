@@ -1,34 +1,37 @@
-﻿# 00 — Scope & sources
+# 00 — Scope & sources
 
 **Pin (first capture):** RimWorld `1.7.4995 rev309`  
 **Waylith product:** `1.0.0+9711575089c3d58df2eb1f09b45de3914b286ae1`  
 **UnityStubs / ACS commit fragment:** `41fb34228c24bb10001f7c2ec979b82ddc322517`  
-**Brutal.\*:** `2026.9.0+…` (record hashes locally when you refresh)
+**Brutal.* :** `2026.9.0+…` (см. `MANIFEST.json`)
 
-## How these notes were produced
+## Что копировали
 
-1. Copy selected DLLs from a local RimWorld **1.7 unstable** install into a private sandbox (do not redistribute).
-2. Inventory types with `ilspycmd -l c`.
-3. Decompile only the types needed for a question; summarize into notes.
-4. Pin Version.txt + ProductVersion / content hashes every refresh.
+Sandbox: `_sandbox/waylith/bin/`
 
-## Assemblies that matter most
+Ключевые сборки для field notes:
 
-- `Waylith.dll` — engine (render, residency, jobs, logging)
+- `Waylith.dll` — движок (рендер, residency, jobs, logging)
 - `Waylith.UnityCompat.dll` — Unity object world
-- `Waylith.AssetBake.dll` — content bake/cache
-- `UnityStubs.dll` — Unity-shaped API surface
-- `RimWorld.dll` — `RimWorldWaylith.*` (MapMainPass, Bootstrap, …)
-- `Assembly-CSharp.dll` — Verse / game (huge; touch surgically)
-- `Brutal.Vulkan*`, `Brutal.Texture`, `Brutal.Ktx`, …
+- `Waylith.AssetBake.dll` — bake/cache контента
+- `UnityStubs.dll` — API surface «как Unity»
+- `RimWorld.dll` — `RimWorldWaylith.*` (MapMainPass и т.п.)
+- `Assembly-CSharp.dll` — игра/Verse (огромный; трогаем точечно)
+- `Brutal.Vulkan*`, `Brutal.Texture`, `Brutal.Ktx`, `VulkanEx`
 
-## Official docs elsewhere
+## Инструменты
 
-- Ludeon blog / [Modder Primer](https://rimworldwiki.com/wiki/Modding_Tutorials/RimWorld_1.7_Mod_Updates) — mod migration, stubs, GLSL shaders
-- Deep residency / VMA / MapMainPass / LongEvent stack behavior are **not** covered there → purpose of this repo
+- `ilspycmd` 9.0.0.7889 (на машине; 11.x требует более новый SDK)
+- Списки: `decomp/lists/*.entities.txt` / `*.hits.txt`
+- Типы: `decomp/types/*.cs`
 
-## Rules
+## Официальное снаружи
 
-- Do not patch or redistribute install binaries for “docs”.
-- Do not commit decompiled trees or DLL copies to git.
-- Separate pack-specific workarounds from engine contracts (label pack repros clearly).
+- Ludeon blog / Modder Primer — миграция модов, stubs, шейдеры GLSL
+- Глубины residency / VMA / MapMainPass в Primer **нет** → это как раз предмет field notes
+
+## Working rules (authors)
+
+- Copy engine DLLs into a sandbox for analysis — do not edit the live game install for docs
+- Do not edit live `Mods\` as part of documentation work
+- Pack-specific hotfixes belong in pack fix logs, not these field notes

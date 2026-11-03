@@ -1,4 +1,4 @@
-﻿# 15 — LongEventHandler (load worker)
+# 15 — LongEventHandler (load worker)
 
 **Confidence:** observed (`Verse.LongEventHandler`) + **khatum**
 
@@ -22,7 +22,7 @@ eventThread.Start();
 
 Default managed thread stack (~1 MiB) + глубокий XML/Harmony + optional `FileLog` stack capture с file info → **khatum** abort/`0xc00000fd`.
 
-Крупные паки иногда патчат **этот** `new Thread` на fat stack — это не `WaylithJobRuntime` workers.
+PackFixes: fat stack transpile / FatLoadTail — костыль вокруг **этого** `new Thread`, не вокруг `WaylithJobRuntime` workers.
 
 ## Официальные рычаги рядом
 
