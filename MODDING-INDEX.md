@@ -6,7 +6,7 @@ Task-oriented map into `notes/`. Unofficial; pin your game build.
 
 | Want | Read |
 |------|------|
-| Official bake → Assets.zip | 09, 12, 23 (`BakeModAssetPacks`) |
+| Official bake → Assets.zip | 09, 12, 23, **96** + [`tools/`](tools/README.md) |
 | DDS vs PNG, shadowing | 16, 19 |
 | BC7 / normals / usage | 26, 27, Prefs in 23 |
 | Runtime compress prefs | 16, 23 |

@@ -1,0 +1,4 @@
+# local inventories & bake logs — keep folder, don't publish machine paths
+*
+!.gitignore
+!README.md

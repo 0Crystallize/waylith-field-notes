@@ -6,6 +6,7 @@
 Unofficial RimWorld **1.7 / Waylith** notes for modding.
 
 - Task index: [MODDING-INDEX.md](MODDING-INDEX.md)
+- Bake helpers: [tools/README.md](tools/README.md) (`Bake-ModAssetPacks.ps1`)
 - Confidence tags: **observed** / **inferred** / **khatum** (pack-specific observations)
 - Do not commit DLLs or full decomp trees
 
@@ -109,7 +110,8 @@ See also: [MODDING-INDEX.md](MODDING-INDEX.md) (task-oriented).
 94. [Pawn generation](notes/93-pawn-generation.md)
 95. [Relations & interactions](notes/94-relations-interactions.md)
 96. [Trade](notes/95-trade.md)
+97. [Bake script (tools)](notes/96-bake-script.md)
 
-## Когда обновлять
+## When to update
 
-После смены Version.txt / Waylith hash — перекопировать sandbox DLL, перегнать типы, обновить notes и pin в 00.
+After a Version.txt / Waylith hash change — re-copy sandbox DLLs, re-decompile touched types, update notes and the pin in 00.
