@@ -1,0 +1,12 @@
+# never commit game binaries or decomp dumps
+*.dll
+*.exe
+*.pdb
+bin/
+decomp/
+_sandbox/
+.vs/
+.idea/
+*.user
+Thumbs.db
+.DS_Store
