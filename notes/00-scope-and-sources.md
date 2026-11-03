@@ -1,4 +1,4 @@
-# 00 — Scope & sources
+﻿# 00 — Scope & sources
 
 **Pin (first capture):** RimWorld `1.7.4995 rev309`  
 **Waylith product:** `1.0.0+9711575089c3d58df2eb1f09b45de3914b286ae1`  
@@ -35,3 +35,5 @@ Sandbox: `_sandbox/waylith/bin/`
 - Copy engine DLLs into a sandbox for analysis — do not edit the live game install for docs
 - Do not edit live `Mods\` as part of documentation work
 - Pack-specific hotfixes belong in pack fix logs, not these field notes
+
+

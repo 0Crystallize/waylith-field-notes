@@ -97,6 +97,28 @@ Task-oriented map into `notes/`. Unofficial; pin your game build.
 | Quests | **70** |
 | Abilities / rituals | **71** |
 | Caravans | **72** |
+| Verbs / projectiles | **73**, **78** |
+| Effecters / flecks / motes | **74** |
+| ThingFilter / stuff / filth | **75** |
+| Terrain | **76** |
+| DamageInfo | **77**, 58 |
+| Genes / xenotypes | **79** |
+| Ideo / precepts | **80** |
+| Buildings / worktables | **81** |
+| Zones / areas | **82** |
+| Books / policies | **83** |
+| Transporters / shuttle | **84** |
+| Mechanitor | **85** |
+| Psychic rituals | **86** |
+| Blueprints / frames | **87** |
+| SketchGen | **88** |
+| Scenarios | **89** |
+| Storyteller | **90** |
+| Raids / arrival | **91** |
+| Map gen / sites | **92** |
+| Pawn generation | **93** |
+| Relations / interactions | **94** |
+| Trade | **95** |
 
 ## Architecture overview
 

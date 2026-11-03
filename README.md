@@ -86,7 +86,30 @@ See also: [MODDING-INDEX.md](MODDING-INDEX.md) (task-oriented).
 71. [Quests](notes/70-quests.md)
 72. [Abilities & rituals](notes/71-abilities-rituals.md)
 73. [Caravans](notes/72-caravans.md)
+74. [Verbs & projectiles](notes/73-verbs-projectiles.md)
+75. [Effecters / flecks / motes](notes/74-effecters-flecks-motes.md)
+76. [ThingFilter / stuff / filth](notes/75-thingfilter-stuff-filth.md)
+77. [Terrain](notes/76-terrain.md)
+78. [DamageInfo](notes/77-damageinfo.md)
+79. [VerbTracker](notes/78-verbtracker.md)
+80. [Genes & xenotypes](notes/79-genes-xenotypes.md)
+81. [Ideo & precepts](notes/80-ideo-precepts.md)
+82. [Buildings & worktables](notes/81-buildings-worktables.md)
+83. [Zones & areas](notes/82-zones-areas.md)
+84. [Books & policies](notes/83-books-policies.md)
+85. [Transporters & shuttle](notes/84-transporters-shuttle.md)
+86. [Mechanitor](notes/85-mechanitor.md)
+87. [Psychic rituals](notes/86-psychic-rituals.md)
+88. [Blueprints & frames](notes/87-blueprints-frames.md)
+89. [SketchGen](notes/88-sketchgen.md)
+90. [Scenarios](notes/89-scenarios.md)
+91. [Storyteller](notes/90-storyteller.md)
+92. [Raids & arrival](notes/91-raids-arrival.md)
+93. [Map gen & sites](notes/92-mapgen-sites.md)
+94. [Pawn generation](notes/93-pawn-generation.md)
+95. [Relations & interactions](notes/94-relations-interactions.md)
+96. [Trade](notes/95-trade.md)
 
 ## Когда обновлять
 
-After a Version.txt / Waylith hash change — re-copy sandbox DLLs, re-decompile touched types, update notes and the pin in 00.
+После смены Version.txt / Waylith hash — перекопировать sandbox DLL, перегнать типы, обновить notes и pin в 00.

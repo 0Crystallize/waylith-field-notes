@@ -1,4 +1,4 @@
-# 51 — Localization (Keyed / inject)
+﻿# 51 — Localization (Keyed / inject)
 
 **Confidence:** observed (`LanguageDatabase`, `Translator`, `LoadedLanguage`) + canon-ru rule
 
@@ -21,3 +21,4 @@ Do **not** hardcode RU in C# or scatter UI strings in PatchOperation. `defName` 
 ## RU style notes (community / pack)
 
 Prefer vanilla RU RimWorld voice: infinitives in job/UI strings, not calques. Prefer BundledRussian / official injects over duplicate overlays. Controversial terms: ask / document once.
+
