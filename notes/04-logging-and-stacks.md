@@ -29,8 +29,8 @@ StackTrace берётся если EnableStackTraces || FileLog.IsCapturingStack
 - `-DisableLogStackTraces` → `WaylithLogFormatter.EnableStackTraces = false`
 - `-NoFileLog` → `FileLog.Disabled = true`
 
-## Khatum
+## Local pack note
 
-На thin LongEvent-воркере массовый `Log.Message` + capture стеков давал native abort / SO (**khatum**). PackFixes глушил те же флаги в ctor.
+На thin LongEvent-воркере массовый `Log.Message` + capture стеков давал native abort / SO (**khatum** confidence). Pack-side mute глушил те же флаги в ctor.
 
-Предпочтение: официальный CLI, когда экспериментируем без PackFixes. Метка в `LOCAL_FIXES` про early mute — пересмотреть относительно `-NoFileLogCallstacks` + fat load stack.
+Предпочтение: официальный CLI без pack hooks, когда экспериментируешь. Early mute vs `-NoFileLogCallstacks` + fat load stack — сверять на своей установке.

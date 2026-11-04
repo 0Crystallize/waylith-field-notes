@@ -14,11 +14,11 @@
 | `AssetPrefetcher` workers | I/O decode threads |
 | `FrameProfiler` / `ThreadEventQueue` | profiling |
 
-## Khatum (load path)
+## Load path (thin worker)
 
 - Загрузка модов идёт не на «толстом» стеке процесса; LongEvent worker historically thin (~1 MiB default thread stack)
 - PE `SizeOfStackReserve` на exe **не** спасает `new Thread(ThreadStart)` workers
-- PackFixes: fat stack для LongEvent / FatLoadTail и т.п. — см. шапку `LOCAL_FIXES`, не дублировать здесь процедуры
+- Pack-side fat stack для LongEvent / FatLoadTail — локальный костыль; процедуры сюда не копировать
 
 ## Правило для будущих идей
 

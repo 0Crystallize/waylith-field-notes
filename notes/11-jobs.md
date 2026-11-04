@@ -18,7 +18,7 @@
 ## Связь с Khatum
 
 Проблемы thin-stack LongEvent / Xml resolve — это **не** обязательно эти Workers; чаще vanilla `new Thread` / LongEvent.  
-Не путать `WaylithJobRuntime` workers с load-worker стеком PackFixes.
+Не путать `WaylithJobRuntime` workers с load-worker стеком [pack-fixes].
 
 ## Правило
 

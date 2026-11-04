@@ -28,7 +28,7 @@
 | `noEvictAtlasSources` | не выселять source-текстуры после static atlas bake |
 | `noCompressAtlases` | не жать static atlas pages |
 
-**khatum note:** PackFixes глушил `CaptureStackTraces` костылём; upstream уже даёт `-NoFileLogCallstacks`. Имеет смысл предпочитать CLI/официальный путь, когда проверяем без PackFixes.
+**khatum note:** [pack-fixes] глушил `CaptureStackTraces` костылём; upstream уже даёт `-NoFileLogCallstacks`. Имеет смысл предпочитать CLI/официальный путь, когда проверяем без [pack-fixes].
 
 Также (из wiki/primer, не из этого декомпила): `-mod=id1,id2` — проверить в Bootstrap/`GenCommandLine` отдельно при необходимости.
 

@@ -18,4 +18,4 @@
 
 ## Как трогать в экспериментах
 
-Только через **запуск с env** / временный PackFixes на копиях идей — не патчить live DLL в Steam folder. Sandbox DLL — для чтения; runtime всегда live install.
+Только через **запуск с env** / временный [pack-fixes] на копиях идей — не патчить live DLL в Steam folder. Sandbox DLL — для чтения; runtime всегда live install.

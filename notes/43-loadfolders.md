@@ -24,5 +24,5 @@ Empty list, duplicate folders, malformed version, out-of-order versions, missing
 ## Practice (1.7 / Waylith)
 
 - Put versioned Assemblies/Defs/Languages under `1.6` / `1.7` (or shared + conditional).
-- RU injects: same LoadFolders version as content (skill `khatum-ru-inject`).
+- RU injects: same LoadFolders version as content (skill `[ru-skill]`).
 - Conditional folders for DLC/mod soft deps beat giant PatchOperationFindMod trees for whole trees of assets.

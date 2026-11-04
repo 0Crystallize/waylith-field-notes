@@ -36,7 +36,10 @@ Full pack bake can be hundreds of mods; one process with everything risks VRAM T
 
 ## Inventory heuristic
 
-`New-BakeableModsList` is **not** calling `ModAssetPacks.HasBakeableContent` (that lives in-engine). It flags folders that contain `Textures/` or `Sounds/` (depth ≤ 6). False positives possible (empty trees); false negatives if assets live only under unusual layouts — then pass `-Mods` explicitly.
+`HasBakeableContent(loadFolder)` in-engine = `Textures/` **or** `Sounds/` directory exists (exact).  
+`New-BakeableModsList` matches that at mod-root (also scans depth ≤ 6 for nested version folders). Still pass `-Mods` explicitly for odd layouts.
+
+Deep bake internals: note **97**.
 
 ## Operational notes
 

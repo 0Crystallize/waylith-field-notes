@@ -1,14 +1,14 @@
-﻿> Unofficial community notes — https://github.com/0Crystallize/waylith-field-notes  
-> No game DLLs / decomp dumps. Pin your RimWorld 1.7 / Waylith build (see notes/00). License: CC BY 4.0.
+﻿> **Public mirror:** https://github.com/0Crystallize/waylith-field-notes  
+> Publish staging: `_publish\waylith-field-notes` (no DLLs). Sync carefully — public repo is scrubbed of private pack paths.
 
-# Waylith Field Notes
+# Waylith Field Notes (local)
 
-Unofficial RimWorld **1.7 / Waylith** notes for modding.
+Unofficial RimWorld **1.7 / Waylith** notes for modding. Pin: see notes/00.
 
 - Task index: [MODDING-INDEX.md](MODDING-INDEX.md)
-- Bake helpers: [tools/README.md](tools/README.md) (`Bake-ModAssetPacks.ps1`)
-- Confidence tags: **observed** / **inferred** / **khatum** (pack-specific observations)
+- Confidence: **observed** / **inferred** / **khatum**
 - Do not commit DLLs or full decomp trees
+- GitHub publish staging: `_publish/waylith-field-notes` (commit only on request)
 
 ## Оглавление / TOC
 
@@ -111,7 +111,64 @@ See also: [MODDING-INDEX.md](MODDING-INDEX.md) (task-oriented).
 95. [Relations & interactions](notes/94-relations-interactions.md)
 96. [Trade](notes/95-trade.md)
 97. [Bake script (tools)](notes/96-bake-script.md)
+98. [AssetBake pipeline](notes/97-assetbake-pipeline.md)
+99. [Mesh upload](notes/98-mesh-upload.md)
+100. [Gravship render](notes/99-gravship-render.md)
+101. [Planet layers](notes/100-planet-layers.md)
+102. [Inspect & ITabs](notes/101-inspect-itabs.md)
+103. [Injection deep](notes/102-injection-deep.md)
+104. [Audio backend (MiniAudio)](notes/103-audio-backend.md)
+105. [Layer passes / PostFx / camera bake](notes/104-passes-camera-bake.md)
+106. [PathFinder jobs](notes/105-pathfinder.md)
+107. [Psychic rituals runtime](notes/106-psychic-rituals-runtime.md)
+108. [Entities & codex](notes/107-entities-codex.md)
+109. [MayRequire*](notes/108-mayrequire.md)
+110. [EngineSwitches](notes/109-engine-switches.md)
+111. [EngineApplication lifecycle](notes/110-engine-app-lifecycle.md)
+112. [SectionLayer discovery](notes/111-section-discovery.md)
+113. [GlowGrid jobs](notes/112-glow-grid-jobs.md)
+114. [DynamicDraw cull](notes/113-dynamic-draw-cull.md)
+115. [Power nets](notes/114-power-nets.md)
+116. [Save / load meta](notes/115-save-load-meta.md)
+117. [Subcameras](notes/116-subcameras.md)
+118. [WorldRenderer](notes/117-world-renderer.md)
+119. [Reachability](notes/118-reachability.md)
+120. [ContentPack mounts](notes/119-contentpack-mounts.md)
+121. [FogGrid & CameraDriver](notes/120-fog-camera.md)
+122. [MemoryUtility unload](notes/121-memory-unload.md)
+123. [GravEngine & facilities](notes/122-grav-engine.md)
+124. [FloatMenuOptionProvider](notes/123-floatmenu-providers.md)
+125. [DebugAction](notes/124-debug-actions.md)
+126. [QuestGen.QuestNode](notes/125-questnode.md)
+127. [WorldPathGrid layers](notes/126-world-path-grid.md)
+128. [Pollution & biome layers](notes/127-pollution-biome-layers.md)
+129. [XML crossref + MayRequire](notes/128-xml-crossref-mayrequire.md)
+130. [BillUtility](notes/129-bills-utility.md)
+131. [Caravan PathFollower](notes/130-caravan-pathfollower.md)
+132. [Architect & LinkGrid](notes/131-architect-linkgrid.md)
+133. [Assignable & guest](notes/132-assignable-guest.md)
+134. [Royalty tracker](notes/133-royalty-tracker.md)
+135. [Biotech pods / carrier](notes/134-biotech-pods.md)
+136. [Caravan ticks/move](notes/135-caravan-ticks.md)
+137. [MapMainPass nested](notes/136-mapmainpass-nested.md)
+138. [WorldGrid layers](notes/137-worldgrid-layers.md)
+139. [Ideo tracker](notes/138-ideo-tracker.md)
+140. [Settlement Odyssey hooks](notes/139-settlement-odyssey.md)
+141. [ThingSetMaker & traders](notes/140-thingset-trader.md)
+142. [Race & Faction defs](notes/141-race-faction-defs.md)
+143. [ThoughtDef gates](notes/142-thoughtdef-gates.md)
+144. [Sketch & WorldFeature](notes/143-sketch-worldfeature.md)
+145. [Vacuum](notes/144-vacuum.md)
+146. [PlanetLayerDef](notes/145-planetlayerdef.md)
+147. [Gravship capture / thruster](notes/146-gravship-capture-thrust.md)
+148. [WorkGiver / Damage / Apparel](notes/147-workgiver-damage-apparel.md)
+149. [CompLaunchable layers](notes/148-launchable-layers.md)
+150. [ShipJob & pocket maps](notes/149-shipjobs-pocketmaps.md)
+151. [Inspiration & StatPart](notes/150-inspiration-statpart.md)
+152. [Arrival & goodwill](notes/151-arrival-goodwill.md)
+153. [LordJob_Ritual](notes/152-lordjob-ritual.md)
+154. [Gravship mapgen / launch ritual](notes/153-gravship-mapgen-ritual.md)
 
-## When to update
+## Когда обновлять
 
-After a Version.txt / Waylith hash change — re-copy sandbox DLLs, re-decompile touched types, update notes and the pin in 00.
+После смены Version.txt / Waylith hash — перекопировать sandbox DLL, перегнать типы, обновить notes и pin в 00.

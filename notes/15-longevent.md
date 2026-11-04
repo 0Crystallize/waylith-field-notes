@@ -22,7 +22,7 @@ eventThread.Start();
 
 Default managed thread stack (~1 MiB) + глубокий XML/Harmony + optional `FileLog` stack capture с file info → **khatum** abort/`0xc00000fd`.
 
-PackFixes: fat stack transpile / FatLoadTail — костыль вокруг **этого** `new Thread`, не вокруг `WaylithJobRuntime` workers.
+[pack-fixes]: fat stack transpile / FatLoadTail — костыль вокруг **этого** `new Thread`, не вокруг `WaylithJobRuntime` workers.
 
 ## Официальные рычаги рядом
 

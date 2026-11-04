@@ -1,4 +1,4 @@
-﻿# 51 — Localization (Keyed / inject)
+# 51 — Localization (Keyed / inject)
 
 **Confidence:** observed (`LanguageDatabase`, `Translator`, `LoadedLanguage`) + canon-ru rule
 
@@ -18,7 +18,6 @@ Under LoadFolders version:
 
 Do **not** hardcode RU in C# or scatter UI strings in PatchOperation. `defName` / logs stay EN identity.
 
-## RU style notes (community / pack)
+## Pack canon (Khatum)
 
-Prefer vanilla RU RimWorld voice: infinitives in job/UI strings, not calques. Prefer BundledRussian / official injects over duplicate overlays. Controversial terms: ask / document once.
-
+See workspace canon-ru: infinitive UI, Крадол, синдер, prefer BundledRussian / official over duplicate injects. Glossary: `[pack]/Tools/glossary-ru.md`. Skill: `[ru-skill]`.

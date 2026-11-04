@@ -30,4 +30,4 @@ Frame loop may run multiple single ticks based on `TickRateMultiplier` / time bu
 - Heavy per-tick work → Rare/Long or MapComponentTick with own cadence.
 - Don’t assume one tick per rendered frame (time controls / catch-up).
 - Destroyed things skipped in TickList; register/deregister queued then applied at Tick start.
-- Multi-map: ticks all maps; ActiveMaps-style mods matter for perf (pack: crystallize.activemaps).
+- Multi-map: ticks all maps; ActiveMaps-style mods matter for perf (pack: [local-mod]).

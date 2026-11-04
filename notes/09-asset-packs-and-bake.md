@@ -41,8 +41,6 @@ Sidecar name pattern: `Assets.zip.*` считается pack sidecar.
 
 Это официальный ответ на «пережимать DDS руками»: Waylith ждёт **Assets.zip bake**, плюс умеет load-time encode.
 
-**Community batch driver:** [`tools/Bake-ModAssetPacks.ps1`](../tools/README.md) (note 96) — inventory + batched `-BakeModAssetPacks=` for packs.
-
 ## ContentPack / AssetPack (Waylith.Assets)
 
 Логический VFS поверх zip/pack: hash manifest, codecs, texture info.  
